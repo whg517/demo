@@ -48,6 +48,6 @@ jobs:
       - run: |
           pip install pylint
           echo "Filted pylint config: "
-          pylint --generate-rcfile | grep 
+          pylint --generate-rcfile | grep ignore-imports
           echo "=================================="
           pylint src
